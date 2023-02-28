@@ -5,12 +5,12 @@ from datetime import datetime, timedelta
 
 CRYPTO = "BTC"
 MARKET = "EUR"
-api_key = "0aa6d42186874985b351cf5899ad2ccb"
-twilio_api = 'd4f35a606fa1eb9c248000597972acd2'
-twilio_num = '+12706336253'
-account_sid = "ACcc551db67487a2b3ed011e711f3b9fa2"
+api_key = "Alpha Advantage API"
+twilio_api = 'Twilio API'
+twilio_num = 'Twilio Number'
+account_sid = "Twilio account SID"
 
-url = "https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=BTC&market=EUR&apikey=LMKLHVH0TK37W71K"
+url = "https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol=BTC&market=EUR&apikey=YourApiKey"
 
 ## STEP 1: Use https://www.alphavantage.co
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
@@ -70,7 +70,7 @@ url_news = 'https://newsapi.org/v2/everything'
 params_news = {
     "q": "+bitcoin%",
     'from': f'{prev_day_str}&',
-    'apiKey': '0aa6d42186874985b351cf5899ad2ccb',
+    'apiKey': 'Alpha Vantage API',
 }
 response_news = requests.get(url_news, params=params_news)
 data_news = response_news.json()
