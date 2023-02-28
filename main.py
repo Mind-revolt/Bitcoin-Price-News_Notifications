@@ -45,7 +45,7 @@ def count_percent_diff():
             .create(
             body=f"The price of BTC rose by {round(count_diff, 2)}\n{titles_list[1]}\n{text_list[1]}",
             from_=twilio_num,
-            to='+48570030904')
+            to='Your Phone Number')
     elif count_diff >= 5:
         print("The price rose by 5 %")
         client = Client(account_sid, twilio_api)
@@ -53,7 +53,7 @@ def count_percent_diff():
             .create(
             body=f"The price of BTC fell by {round(count_diff, 2)}\n{titles_list[0]}\n{text_list[0]}",
             from_=twilio_num,
-            to='+48570030904')
+            to='Your Phone Number')
     else:
         print(f"There is {round(count_diff, 3)} % difference")
         client = Client(account_sid, twilio_api)
@@ -61,7 +61,7 @@ def count_percent_diff():
             .create(
             body=f"The price of BTC changed by {round(count_diff, 3)}\n{titles_list[2]}\n{text_list[2]}",
             from_=twilio_num,
-            to='+48570030904')
+            to='Your Phone Number')
 
 # print(time_diff)
 ## STEP 2: Use https://newsapi.org
